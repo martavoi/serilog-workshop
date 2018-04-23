@@ -349,7 +349,7 @@ public class UsersController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(CreateUserRequest request)
+    public async Task<IActionResult> Create([FromBody]CreateUserRequest request)
     {
         var user = new User
         {
